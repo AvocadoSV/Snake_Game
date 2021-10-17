@@ -8,7 +8,7 @@ SPACE_SIZE = 50
 BODY_PARTS = 3
 SNAKE_COLOR = 'GREEN'
 FOOD_COLOR = 'RED'
-BG_COLOR = 'BLACK'
+BG_COLOR = '#000000'
 
 class Snake:
     pass
@@ -41,6 +41,9 @@ direction = 'down'
 
 label = Label(window,text='Score: {}'.format(score),font=('consolas',40))
 label.pack()
+
+canvas = Canvas(window,bg=BG_COLOR,height=GAME_HEIGHT,width=GAME_WIDTH)
+canvas.pack()
 
 
 window.mainloop()
